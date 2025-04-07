@@ -20,3 +20,4 @@ cd Firewall-Script-Linux-iptables-Script-
 chmod +x firewall.sh
 sudo ./firewall.sh
 
+
