@@ -15,7 +15,8 @@ A simple Bash script that configures basic iptables rules to secure a Linux mach
 
 ## 🛠️ How to Use
 ```bash
-git clone https://github.com/yourusername/firewall-script.git
-cd firewall-script
+git clone https://github.com/AhmedxAbubakar/Firewall-Script-Linux-iptables-Script-.git
+cd Firewall-Script-Linux-iptables-Script-
 chmod +x firewall.sh
 sudo ./firewall.sh
+
