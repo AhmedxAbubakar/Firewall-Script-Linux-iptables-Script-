@@ -1,23 +1,33 @@
-# Firewall Script 🔥
+# 🔥 Advanced iptables Firewall Script
 
-A simple Bash script that configures basic iptables rules to secure a Linux machine. It resets existing rules and applies a default deny-all policy while allowing loopback traffic and SSH access.
+This is a Bash script that configures a secure and robust firewall using `iptables`.  
+It includes protections against spoofed traffic, brute-force SSH attacks, and allows only necessary inbound traffic.
 
-## 🚀 Features
-- Flushes all existing iptables rules
-- Sets default policies to DROP incoming and forwarding traffic
-- Allows established and related connections
-- Allows traffic on loopback interface
-- Enables SSH access (port 22)
+---
+
+## 🛡️ Features
+
+- 🔒 Default **deny-all** policy (except outbound)
+- 🔁 Allows loopback and established connections
+- ⚡ Rate-limits SSH (port 22) to prevent brute-force
+- 🌐 Restricts web traffic (port 80/443) to a specific IP range
+- 📡 Allows ICMP (ping) with limits
+- 🚫 Drops spoofed private/reserved IP ranges on non-loopback interfaces
+- 📝 Logs and drops all other incoming traffic
+
+---
 
 ## 📦 Requirements
+
 - Linux system with `iptables` installed
-- Root privileges
+- Root privileges to execute the script
 
-## 🛠️ How to Use
+---
+
+## 🧰 How to Use
+
+1. **Clone or copy the script:**
+
 ```bash
-git clone https://github.com/AhmedxAbubakar/Firewall-Script-Linux-iptables-Script-.git
-cd Firewall-Script-Linux-iptables-Script-
+wget https://example.com/firewall.sh
 chmod +x firewall.sh
-sudo ./firewall.sh
-
-
